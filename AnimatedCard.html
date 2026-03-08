@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Card Hover Effect</title>
+    <style>
+        *{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#f4f4f4;
+}
+
+/* Card */
+.card{
+  width:300px;
+  background:white;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 10px 20px rgba(0,0,0,0.15);
+  transition:all 0.4s ease;
+  cursor:pointer;
+}
+
+/* Image container */
+.card-img{
+  overflow:hidden;
+}
+
+.card-img img{
+  width:100%;
+  display:block;
+  transition:transform 0.4s ease;
+}
+
+/* Content */
+.card-content{
+  padding:20px;
+}
+
+.card-content h3{
+  margin-bottom:10px;
+}
+
+.card-content p{
+  color:#555;
+  font-size:14px;
+}
+
+/* Hover Effect */
+.card:hover{
+  transform:translateY(-12px);
+  box-shadow:0 20px 40px rgba(0,0,0,0.25);
+}
+
+.card:hover img{
+  transform:scale(1.1);
+}
+    </style>
+</head>
+<body>
+    <div class="card">
+  <div class="card-img">
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="card image">
+  </div>
+
+  <div class="card-content">
+    <h3>Beautiful Nature</h3>
+    <p>Explore amazing landscapes and breathtaking views from around the world.</p>
+  </div>
+</div>
+</body>
+</html>
